@@ -750,8 +750,69 @@ const locales = {
               coordenates: "-32.412606, -63.243635",
               loc: "Villa María",
             },
+            {
+              id: "1040",
+              name: "Óptica Optivisión",
+              address: "9 de julio 1830",
+              phone: "3468-472-842",
+              coordenates: "-33.204706, -62.601392",
+              loc: "Monte Maíz",
+            },
+            {
+              id: "1044",
+              name: "Óptica Carasa",
+              address: "Córdoba 440",
+              phone: "3537-425-550",
+              coordenates: "-32.629779, -62.691859",
+              loc: "Bell Ville",
+            },
+            {
+              id: "1041",
+              name: "Óptica Diez Décimas",
+              address: "General Paz 342",
+              phone: "3472-436-821",
+              coordenates: "-32.662093, -62.298533",
+              loc: "Leones",
+            },
+            {
+              id: "1042",
+              name: "Óptica Llamosas",
+              address: "Jujuy 1449",
+              phone: "3468-649-003",
+              coordenates: "-33.205217, -62.602182",
+              loc: "Monte Maíz",
+            },
+            {
+              id: "1043",
+              name: "Óptica Bertozzi",
+              address: "Belgrano 853",
+              phone: "3472-425-465",
+              coordenates: "-32.696012, -62.103278",
+              loc: "Marcos Juárez",
+            },
           ],
         },
+
+        // -----------------------------------------
+
+        buenosAires: [
+          {
+            id: "1501",
+            name: "Óptica Visual",
+            address: "Pellegrini 350",
+            phone: "3361-430-907",
+            coordenates: "-33.335031, -60.219098",
+            loc: "San Nicolás",
+          },
+          {
+            id: "1502",
+            name: "Óptica Mutual Savio",
+            address: "De La Nación 261",
+            phone: "3364-427-886",
+            coordenates: "-33.332437, -60.218775",
+            loc: "San Nicolás",
+          },
+        ],
 
         // -----------------------------------------
 
@@ -762,6 +823,19 @@ const locales = {
             address: "Rivadavia 880",
             coordenates: "-28.471754, -65.778101",
             loc: "San Fernando del Valle de Catamarca",
+          },
+        ],
+
+        // -----------------------------------------
+
+        corrientes: [
+          {
+            id: "1601",
+            name: "Óptica Pizzio",
+            address: "Belgrano 131",
+            phone: "3775-498-535",
+            coordenates: "-31.416304, -64.188578",
+            loc: "Mocoretá",
           },
         ],
 
@@ -845,6 +919,38 @@ const locales = {
             coordenates: "-32.685812, -58.889918",
             loc: "Urdinarrain",
           },
+          {
+            id: "1212",
+            name: "Óptica Foto Óptica Ramírez",
+            address: "Libertador 52",
+            phone: "343-490-2238",
+            coordenates: "-32.175079, -60.196747",
+            loc: "General Ramírez",
+          },
+          {
+            id: "1213",
+            name: "Óptica Procolor",
+            address: "Urquiza 99",
+            phone: "345-491-1070",
+            coordenates: "-31.625673, -58.504971",
+            loc: "San Salvador",
+          },
+          {
+            id: "1214",
+            name: "Óptica Gamarra",
+            address: "Toscanini 241",
+            phone: "343-431-3389",
+            coordenates: "-31.726936, -60.511156",
+            loc: "Paraná",
+          },
+          {
+            id: "1215",
+            name: "Óptica Milena Bovier",
+            address: "25 de mayo 1022",
+            phone: "343-492-1055",
+            coordenates: "-31.865317, -60.003438",
+            loc: "Viale",
+          },
         ],
 
         // -----------------------------------------
@@ -891,6 +997,126 @@ const locales = {
             address: "9 de Julio 390",
             coordenates: "-30.536488, -61.962272",
             loc: "Suardi",
+          },
+          {
+            id: "1407",
+            name: "Óptica Esperanza",
+            address: "Av. Los Colonizadores 1315",
+            phone: "3496-545-984",
+            coordenates: "-31.449163, -60.928508",
+            loc: "Esperanza",
+          },
+          {
+            id: "1408",
+            name: "Óptica Cresta Fighiera",
+            address: "Uriburu 553",
+            phone: "3402-470-454",
+            coordenates: "-32.989860, -60.622439",
+            loc: "Rosario",
+          },
+          {
+            id: "1409",
+            name: "Óptica Arévalo",
+            address: "Roque Sáenz Peña 1254",
+            phone: "3401-448-057",
+            coordenates: "-32.368830, -61.353663",
+            loc: "San Genaro",
+          },
+          {
+            id: "1410",
+            name: "Óptica Rosario",
+            address: "Oroño 567",
+            phone: "341-425-4667",
+            coordenates: "-32.941110, -60.652441",
+            loc: "Rosario",
+          },
+          {
+            id: "1411",
+            name: "Óptica La Mio Pía",
+            address: "Ovidio Lagos 1143",
+            phone: "341-421-2381",
+            coordenates: "-32.946459, -60.662509",
+            loc: "Rosario",
+          },
+          {
+            id: "1412",
+            name: "Óptica C. O. Integral",
+            address: "Sarmiento 1162",
+            phone: "3406-444-336",
+            coordenates: "-31.896691, -61.858555",
+            loc: "San Jorge",
+          },
+          {
+            id: "1413",
+            name: "Óptica Chabas",
+            address: "Santa Fe 1665",
+            phone: "3464-481-301",
+            coordenates: "-33.245096, -61.363467",
+            loc: "Chabas",
+          },
+          {
+            id: "1414",
+            name: "Óptica Schellhas",
+            address: "Buenos Aires 2201",
+            phone: "3464-423-216",
+            coordenates: "-33.045126, -61.167178",
+            loc: "Casilda",
+          },
+          {
+            id: "1415",
+            name: "Óptica Solares",
+            address: "Roberto Ferrari 9",
+            phone: "341-478-3702",
+            coordenates: "-32.818088, -60.716412",
+            loc: "Capitán Bermúdez",
+          },
+          {
+            id: "1416",
+            name: "Óptica La Óptica",
+            address: "Belgrano 399",
+            phone: "3402-420-511",
+            coordenates: "-33.159089, -60.509843",
+            loc: "Arroyo Seco",
+          },
+          {
+            id: "1417",
+            name: "Óptica Argentina Exp",
+            address: "Perón 2193",
+            phone: "341-498-5757",
+            coordenates: "-33.025295, -60.624482",
+            loc: "Villa G. Galvez",
+          },
+          {
+            id: "1418",
+            name: "Óptica Focus",
+            address: "Zeballos 2191",
+            phone: "341-213-4744",
+            coordenates: "-32.952388, -60.655294",
+            loc: "Rosario",
+          },
+          {
+            id: "1419",
+            name: "Óptica Closa",
+            address: "Moreno 778",
+            phone: "3402-491-404",
+            coordenates: "-33.313777, -60.604352",
+            loc: "Coronel Bogado",
+          },
+          {
+            id: "1420",
+            name: "Óptica Boano",
+            address: "Calle 52 116",
+            phone: "3462-452-191",
+            coordenates: "-34.003462, -61.605706",
+            loc: "Villa Cañas",
+          },
+          {
+            id: "1421",
+            name: "Óptica San Martín",
+            address: "San Martín 180",
+            phone: "3462-430-034",
+            coordenates: "-33.750522, -61.962083",
+            loc: "Venado Tuerto",
           },
         ],
 
@@ -984,6 +1210,14 @@ DATA.opticas.santaFe.forEach((item) => O_SANTA_FE.push(item));
 const O_SGO_DEL_ESTERO = [];
 DATA.opticas.santiagoDelEstero.forEach((item) => O_SGO_DEL_ESTERO.push(item));
 
+//opticas buenos aires
+const O_BS_AS = [];
+DATA.opticas.buenosAires.forEach((item) => O_BS_AS.push(item));
+
+//opticas corrientes
+const O_CORRIENTES = [];
+DATA.opticas.corrientes.forEach((item) => O_CORRIENTES.push(item));
+
 // -----------------------------------------
 
 // mapa
@@ -1058,6 +1292,8 @@ agregarMarcadoresVerdes(O_CATAMARCA);
 agregarMarcadoresVerdes(O_ENTRE_RIOS);
 agregarMarcadoresVerdes(O_SANTA_FE);
 agregarMarcadoresVerdes(O_SGO_DEL_ESTERO);
+agregarMarcadoresVerdes(O_BS_AS);
+agregarMarcadoresVerdes(O_CORRIENTES);
 
 // L.marker([-31.410237, -64.199145]).addTo(map);
 // .bindPopup("Aca tenes que elegir donde estan las farmacias, Hugo.")
@@ -1134,7 +1370,7 @@ function insertTemplate(arrayDeObjetos) {
 
     templateItem.appendChild(templateName);
     templateItem.appendChild(templateAddress);
-    templateItem.appendChild(templateLoc);
+    if (local.loc) templateItem.appendChild(templateLoc);
     if (local.phone) templateItem.appendChild(templatePhone);
 
     grid.appendChild(templateItem);
@@ -1188,6 +1424,7 @@ opticasTitle.addEventListener("click", () => {
 
 // inserting templates with stores in the stores tab
 
+// farmacias
 const itemsFLider = document.querySelectorAll(".local-seccion_cadenas h5")[0];
 const itemsFGralPaz = document.querySelectorAll(".local-seccion_cadenas h5")[1];
 const itemsFSanchezA = document.querySelectorAll(
@@ -1197,12 +1434,16 @@ const itemsFRGralPaz = document.querySelectorAll(
   ".local-seccion_cadenas h5"
 )[3];
 const itemsFIndep = document.querySelectorAll(".local-seccion_cadenas h5")[4];
+
+// opticas
 const itemsOCCap = document.querySelectorAll(".local-seccion_cadenas h5")[5];
 const itemsOCInt = document.querySelectorAll(".local-seccion_cadenas h5")[6];
-const itemsOCata = document.querySelectorAll(".local-seccion_cadenas h5")[7];
-const itemsOEnRi = document.querySelectorAll(".local-seccion_cadenas h5")[8];
-const itemsOSaFe = document.querySelectorAll(".local-seccion_cadenas h5")[9];
-const itemsOSgo = document.querySelectorAll(".local-seccion_cadenas h5")[10];
+const itemsBsAs = document.querySelectorAll(".local-seccion_cadenas h5")[7];
+const itemsOCata = document.querySelectorAll(".local-seccion_cadenas h5")[8];
+const itemsCorri = document.querySelectorAll(".local-seccion_cadenas h5")[9];
+const itemsOEnRi = document.querySelectorAll(".local-seccion_cadenas h5")[10];
+const itemsOSaFe = document.querySelectorAll(".local-seccion_cadenas h5")[11];
+const itemsOSgo = document.querySelectorAll(".local-seccion_cadenas h5")[12];
 
 const subtitulosFarmacias = [];
 subtitulosFarmacias.push(
@@ -1217,7 +1458,9 @@ const subtitulosOpticas = [];
 subtitulosOpticas.push(
   itemsOCCap,
   itemsOCInt,
+  itemsBsAs,
   itemsOCata,
+  itemsCorri,
   itemsOEnRi,
   itemsOEnRi,
   itemsOSaFe,
@@ -1272,9 +1515,17 @@ itemsOCInt.addEventListener("click", () => {
   grid.innerHTML = "";
   insertTemplate(O_CBA_INTERIOR);
 });
+itemsBsAs.addEventListener("click", () => {
+  grid.innerHTML = "";
+  insertTemplate(O_BS_AS);
+});
 itemsOCata.addEventListener("click", () => {
   grid.innerHTML = "";
   insertTemplate(O_CATAMARCA);
+});
+itemsCorri.addEventListener("click", () => {
+  grid.innerHTML = "";
+  insertTemplate(O_CORRIENTES);
 });
 itemsOEnRi.addEventListener("click", () => {
   grid.innerHTML = "";
