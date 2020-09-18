@@ -170,7 +170,7 @@ const locales = {
           farmaciasSanchezAntonioli: [
             {
               id: "401",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Av. Pablo Cabrera 4650",
               phone: "",
               coordenates: "-31.361922, -64.203945",
@@ -178,7 +178,7 @@ const locales = {
             },
             {
               id: "402",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Av. Donato Alvarez 7914",
               phone: "",
               coordenates: "-31.330787, -64.264065",
@@ -186,7 +186,7 @@ const locales = {
             },
             {
               id: "403",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Av. Leandro Alem 1570",
               phone: "",
               coordenates: "-31.386521, -64.159901",
@@ -194,7 +194,7 @@ const locales = {
             },
             {
               id: "404",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Av. Carlos Gauss 5904",
               phone: "",
               coordenates: "-31.353769, -64.249622",
@@ -202,7 +202,7 @@ const locales = {
             },
             {
               id: "405",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Congreso 5476",
               phone: "",
               coordenates: "-31.474231, -64.225256",
@@ -210,7 +210,7 @@ const locales = {
             },
             {
               id: "406",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Av. Renault 1916",
               phone: "",
               coordenates: "-31.472613, -64.232027",
@@ -218,7 +218,7 @@ const locales = {
             },
             {
               id: "407",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Defensa 1753",
               phone: "",
               coordenates: "-31.467256, -64.223478",
@@ -226,7 +226,7 @@ const locales = {
             },
             {
               id: "408",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Av. Vélez Sarsfield 4101",
               phone: "",
               coordenates: "-31.457493, -64.199571",
@@ -234,7 +234,7 @@ const locales = {
             },
             {
               id: "409",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Av. Vélez Sarsfield 3426",
               phone: "",
               coordenates: "-31.449283, -64.199764",
@@ -242,7 +242,7 @@ const locales = {
             },
             {
               id: "410",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Leartes 2484",
               phone: "",
               coordenates: "-31.438997, -64.139213",
@@ -250,7 +250,7 @@ const locales = {
             },
             {
               id: "411",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Rosales 5395",
               phone: "",
               coordenates: "-31.430934, -64.116986",
@@ -258,7 +258,7 @@ const locales = {
             },
             {
               id: "412",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Av. Fuerza Aérea 3735",
               phone: "",
               coordenates: "-31.432405, -64.237431",
@@ -266,7 +266,7 @@ const locales = {
             },
             {
               id: "413",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Naciones Unidas 4927",
               phone: "",
               coordenates: "-31.441214, -64.207402",
@@ -274,7 +274,7 @@ const locales = {
             },
             {
               id: "414",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Av. Fuerza Aérea 4730",
               phone: "",
               coordenates: "-31.432513, -64.248224",
@@ -282,7 +282,7 @@ const locales = {
             },
             {
               id: "415",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Av. Fuerza Aérea 2804",
               phone: "",
               coordenates: "-31.431109, -64.225906",
@@ -290,7 +290,7 @@ const locales = {
             },
             {
               id: "416",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Justo José Urquiza 381",
               phone: "",
               coordenates: "-31.424549, -63.045146",
@@ -298,7 +298,7 @@ const locales = {
             },
             {
               id: "417",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Ruta C 45 km 1",
               phone: "",
               coordenates: "-31.473867, -64.430779",
@@ -306,7 +306,7 @@ const locales = {
             },
             {
               id: "418",
-              name: "Farmacias Sanchez Antoniolli",
+              name: "Farmacias Sánchez Antoniolli",
               address: "Av. Carcano 427",
               phone: "",
               coordenates: "-31.429126, -64.496996",
@@ -603,6 +603,20 @@ const locales = {
               name: "Óptica Valle Visión",
               address: "Deán Funes 398",
               coordenates: "-31.414428, -64.189268",
+              loc: "Córdoba Capital",
+            },
+            {
+              id: "1022",
+              name: "Óptica Ver Bien",
+              address: "Av. Colón 3500",
+              coordenates: "",
+              loc: "Córdoba Capital",
+            },
+            {
+              id: "1023",
+              name: "Óptica Planet Gafas",
+              address: "Liberta 1051 loc. 430",
+              coordenates: "",
               loc: "Córdoba Capital",
             },
           ],
@@ -983,7 +997,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 // agregar marcadores verdes
 let greenIcon = new L.Icon({
-  iconUrl: "../img/marker-icon-2x-green.png",
+  iconUrl: "../img/marker-icon-green.png",
   shadowUrl: "../img/marker-shadow.png",
   iconSize: [25, 41],
   iconAnchor: [12, 41],
@@ -1224,19 +1238,6 @@ function resaltarTitulo(array) {
 resaltarTitulo(subtitulosFarmacias);
 resaltarTitulo(subtitulosOpticas);
 
-// inserting items in grid
-
-// function insertItemsGrid(array) {
-//   array.forEach((item) => {
-//     item.addEventListener("click", () => {
-//       insertTemplate(item.dataset.target);
-//     });
-//   });
-// }
-
-// insertItemsGrid(subtitulosFarmacias);
-// insertItemsGrid(subtitulosOpticas);
-
 insertTemplate(F_LIDER);
 
 //farmacias
@@ -1286,8 +1287,4 @@ itemsOSaFe.addEventListener("click", () => {
 itemsOSgo.addEventListener("click", () => {
   grid.innerHTML = "";
   insertTemplate(O_SGO_DEL_ESTERO);
-});
-
-document.querySelector(".template-item").addEventListener("click", () => {
-  document.querySelector("#id-mapa").scrollIntoView();
 });

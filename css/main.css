@@ -1774,6 +1774,7 @@ footer .copyright::before {
   background-color: #eee;
   -webkit-box-shadow: 1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.15);
           box-shadow: 1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  border: .5px solid #ddd;
 }
 
 @media (min-width: 768px) {
@@ -1920,6 +1921,7 @@ footer .copyright::before {
   text-align: center;
   -webkit-box-shadow: 1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.15);
           box-shadow: 1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  border: .5px solid #ddd;
 }
 
 @media (min-width: 768px) {
