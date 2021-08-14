@@ -117,7 +117,7 @@ const locales = {
           farmaciasRedGeneralPaz: [
             {
               id: "301",
-              name: "Farmacias Red General Paz",
+              name: "Farmacias Red",
               address: "Duarte Quiróz 1400",
               phone: "351-482-8101",
               coordenates: "-31.412952, -64.204534",
@@ -125,7 +125,7 @@ const locales = {
             },
             {
               id: "302",
-              name: "Farmacias Red General Paz",
+              name: "Farmacias Red",
               address: "Av. Pedro Laplace 5890",
               phone: "0810-4444-729",
               coordenates: "-31.357990, -64.241061",
@@ -133,7 +133,7 @@ const locales = {
             },
             {
               id: "303",
-              name: "Farmacias Red General Paz",
+              name: "Farmacias Red",
               address: "Rafael Núñez 3686",
               phone: "351-482-5358",
               coordenates: "-31.376383, -64.225938",
@@ -141,7 +141,7 @@ const locales = {
             },
             {
               id: "304",
-              name: "Farmacias Red General Paz",
+              name: "Farmacias Red",
               address: "Av. Recta Martinolli 6137",
               phone: "3543-448-880",
               coordenates: "-31.349722, -64.252448",
@@ -149,7 +149,7 @@ const locales = {
             },
             {
               id: "305",
-              name: "Farmacias Red General Paz",
+              name: "Farmacias Red",
               address: "Emilio Lamarca 4135",
               phone: "351-366-6948",
               coordenates: "-31.382147, -64.243485",
@@ -157,7 +157,7 @@ const locales = {
             },
             {
               id: "306",
-              name: "Farmacias Red General Paz",
+              name: "Farmacias Red",
               address: "Recta Martinolli 8853",
               phone: "351-203-1267",
               coordenates: "-31.344123, -64.287355",
@@ -416,7 +416,7 @@ const locales = {
           farmaciasRedGeneralPaz: [
             {
               id: "601",
-              name: "Farmacias Red General Paz",
+              name: "Farmacias Red",
               address: "Santa Fe 124",
               phone: "362-445-1962",
               coordenates: "-27.448402, -58.985760",
@@ -428,7 +428,7 @@ const locales = {
           farmaciasRedGeneralPaz: [
             {
               id: "701",
-              name: "Farmacias Red General Paz",
+              name: "Farmacias Red",
               address: "San Martín 2275",
               phone: "376-442-7222",
               coordenates: "-27.365593, -55.898499",
@@ -436,7 +436,7 @@ const locales = {
             },
             {
               id: "702",
-              name: "Farmacias Red General Paz",
+              name: "Farmacias Red",
               address: "Felix de Azara y Entre Ríos",
               phone: "376-443-1122",
               coordenates: "-27.369743, -55.894005",
@@ -1217,7 +1217,7 @@ DATA.farmacias.cordoba.farmaciasSanchezAntonioli.forEach((item) =>
   F_SANCHEZ_ANTONIOLI.push(item)
 );
 
-//farmacias red general paz
+//farmacias red
 const F_RED_GENERAL_PAZ = [];
 DATA.farmacias.cordoba.farmaciasRedGeneralPaz.forEach((item) =>
   F_RED_GENERAL_PAZ.push(item)
@@ -1447,151 +1447,210 @@ function removeClass(element, classToRemove) {
 function addClass(element, classToAdd) {
   element.classList.add(classToAdd);
 }
-
-farmaciasTitle.addEventListener("click", () => {
-  if (!farmaciasTitle.classList.contains("selected-item")) {
-    addClass(farmaciasTitle, "selected-item");
-    removeClass(opticasTitle, "selected-item");
-    removeClass(farmaciasSubtitle, "ocultar");
-    addClass(opticasSubtitle, "ocultar");
-  }
-  subtitulosFarmacias.forEach((item) => {
-    removeClass(item, "selected-item");
-  });
-  addClass(itemsFLider, "selected-item");
-  grid.innerHTML = "";
-  insertTemplate(F_LIDER);
-});
-
-opticasTitle.addEventListener("click", () => {
-  if (!opticasTitle.classList.contains("selected-item")) {
-    addClass(opticasTitle, "selected-item");
-    removeClass(farmaciasTitle, "selected-item");
-    addClass(farmaciasSubtitle, "ocultar");
-    removeClass(opticasSubtitle, "ocultar");
-  }
-  subtitulosOpticas.forEach((item) => {
-    removeClass(item, "selected-item");
-  });
-  addClass(itemsOCCap, "selected-item");
-  grid.innerHTML = "";
-  insertTemplate(O_CBA_CAPITAL);
-});
-
-// inserting templates with stores in the stores tab
-
-// farmacias
-const itemsFLider = document.querySelectorAll(".local-seccion_cadenas h5")[0];
-const itemsFGralPaz = document.querySelectorAll(".local-seccion_cadenas h5")[1];
-const itemsFSanchezA = document.querySelectorAll(
-  ".local-seccion_cadenas h5"
-)[2];
-const itemsFRGralPaz = document.querySelectorAll(
-  ".local-seccion_cadenas h5"
-)[3];
-const itemsFIndep = document.querySelectorAll(".local-seccion_cadenas h5")[4];
-
-// opticas
-const itemsOCCap = document.querySelectorAll(".local-seccion_cadenas h5")[5];
-const itemsOCInt = document.querySelectorAll(".local-seccion_cadenas h5")[6];
-const itemsBsAs = document.querySelectorAll(".local-seccion_cadenas h5")[7];
-const itemsOCata = document.querySelectorAll(".local-seccion_cadenas h5")[8];
-const itemsCorri = document.querySelectorAll(".local-seccion_cadenas h5")[9];
-const itemsOEnRi = document.querySelectorAll(".local-seccion_cadenas h5")[10];
-const itemsOSaFe = document.querySelectorAll(".local-seccion_cadenas h5")[11];
-const itemsOSgo = document.querySelectorAll(".local-seccion_cadenas h5")[12];
-
-const subtitulosFarmacias = [];
-subtitulosFarmacias.push(
-  itemsFLider,
-  itemsFGralPaz,
-  itemsFSanchezA,
-  itemsFRGralPaz,
-  itemsFIndep
-);
-
-const subtitulosOpticas = [];
-subtitulosOpticas.push(
-  itemsOCCap,
-  itemsOCInt,
-  itemsBsAs,
-  itemsOCata,
-  itemsCorri,
-  itemsOEnRi,
-  itemsOEnRi,
-  itemsOSaFe,
-  itemsOSgo
-);
-
-function resaltarTitulo(array) {
-  array.forEach((item) => {
-    item.addEventListener("click", () => {
-      array.forEach((item) => {
-        removeClass(item, "selected-item");
-      });
-      addClass(item, "selected-item");
+try {
+  farmaciasTitle.addEventListener("click", () => {
+    if (!farmaciasTitle.classList.contains("selected-item")) {
+      addClass(farmaciasTitle, "selected-item");
+      removeClass(opticasTitle, "selected-item");
+      removeClass(farmaciasSubtitle, "ocultar");
+      addClass(opticasSubtitle, "ocultar");
+    }
+    subtitulosFarmacias.forEach((item) => {
+      removeClass(item, "selected-item");
     });
+    addClass(itemsFLider, "selected-item");
+    grid.innerHTML = "";
+    insertTemplate(F_LIDER);
   });
-}
 
-resaltarTitulo(subtitulosFarmacias);
-resaltarTitulo(subtitulosOpticas);
+  opticasTitle.addEventListener("click", () => {
+    if (!opticasTitle.classList.contains("selected-item")) {
+      addClass(opticasTitle, "selected-item");
+      removeClass(farmaciasTitle, "selected-item");
+      addClass(farmaciasSubtitle, "ocultar");
+      removeClass(opticasSubtitle, "ocultar");
+    }
+    subtitulosOpticas.forEach((item) => {
+      removeClass(item, "selected-item");
+    });
+    addClass(itemsOCCap, "selected-item");
+    grid.innerHTML = "";
+    insertTemplate(O_CBA_CAPITAL);
+  });
+  // inserting templates with stores in the stores tab
 
-insertTemplate(F_LIDER);
+  // farmacias
+  const itemsFLider = document.querySelectorAll(".local-seccion_cadenas h5")[0];
+  const itemsFGralPaz = document.querySelectorAll(
+    ".local-seccion_cadenas h5"
+  )[1];
+  const itemsFSanchezA = document.querySelectorAll(
+    ".local-seccion_cadenas h5"
+  )[2];
+  const itemsFRGralPaz = document.querySelectorAll(
+    ".local-seccion_cadenas h5"
+  )[3];
+  const itemsFIndep = document.querySelectorAll(".local-seccion_cadenas h5")[4];
 
-//farmacias
-itemsFLider.addEventListener("click", () => {
-  grid.innerHTML = "";
+  // opticas
+  const itemsOCCap = document.querySelectorAll(".local-seccion_cadenas h5")[5];
+  const itemsOCInt = document.querySelectorAll(".local-seccion_cadenas h5")[6];
+  const itemsBsAs = document.querySelectorAll(".local-seccion_cadenas h5")[7];
+  const itemsOCata = document.querySelectorAll(".local-seccion_cadenas h5")[8];
+  const itemsCorri = document.querySelectorAll(".local-seccion_cadenas h5")[9];
+  const itemsOEnRi = document.querySelectorAll(".local-seccion_cadenas h5")[10];
+  const itemsOSaFe = document.querySelectorAll(".local-seccion_cadenas h5")[11];
+  const itemsOSgo = document.querySelectorAll(".local-seccion_cadenas h5")[12];
+
+  const subtitulosFarmacias = [];
+  subtitulosFarmacias.push(
+    itemsFLider,
+    itemsFGralPaz,
+    itemsFSanchezA,
+    itemsFRGralPaz,
+    itemsFIndep
+  );
+
+  const subtitulosOpticas = [];
+  subtitulosOpticas.push(
+    itemsOCCap,
+    itemsOCInt,
+    itemsBsAs,
+    itemsOCata,
+    itemsCorri,
+    itemsOEnRi,
+    itemsOEnRi,
+    itemsOSaFe,
+    itemsOSgo
+  );
+
+  function resaltarTitulo(array) {
+    array.forEach((item) => {
+      item.addEventListener("click", () => {
+        array.forEach((item) => {
+          removeClass(item, "selected-item");
+        });
+        addClass(item, "selected-item");
+      });
+    });
+  }
+
+  resaltarTitulo(subtitulosFarmacias);
+  resaltarTitulo(subtitulosOpticas);
+
   insertTemplate(F_LIDER);
-});
 
-itemsFGralPaz.addEventListener("click", () => {
-  grid.innerHTML = "";
-  insertTemplate(F_GENERAL_PAZ);
-});
-itemsFSanchezA.addEventListener("click", () => {
-  grid.innerHTML = "";
-  insertTemplate(F_SANCHEZ_ANTONIOLI);
-});
-itemsFRGralPaz.addEventListener("click", () => {
-  grid.innerHTML = "";
-  insertTemplate(F_RED_GENERAL_PAZ);
-});
-itemsFIndep.addEventListener("click", () => {
-  grid.innerHTML = "";
-  insertTemplate(F_GENERICAS);
-});
+  //farmacias
+  itemsFLider.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(F_LIDER);
+  });
 
-//opticas
-itemsOCCap.addEventListener("click", () => {
-  grid.innerHTML = "";
-  insertTemplate(O_CBA_CAPITAL);
-});
-itemsOCInt.addEventListener("click", () => {
-  grid.innerHTML = "";
-  insertTemplate(O_CBA_INTERIOR);
-});
-itemsBsAs.addEventListener("click", () => {
-  grid.innerHTML = "";
-  insertTemplate(O_BS_AS);
-});
-itemsOCata.addEventListener("click", () => {
-  grid.innerHTML = "";
-  insertTemplate(O_CATAMARCA);
-});
-itemsCorri.addEventListener("click", () => {
-  grid.innerHTML = "";
-  insertTemplate(O_CORRIENTES);
-});
-itemsOEnRi.addEventListener("click", () => {
-  grid.innerHTML = "";
-  insertTemplate(O_ENTRE_RIOS);
-});
-itemsOSaFe.addEventListener("click", () => {
-  grid.innerHTML = "";
-  insertTemplate(O_SANTA_FE);
-});
-itemsOSgo.addEventListener("click", () => {
-  grid.innerHTML = "";
-  insertTemplate(O_SGO_DEL_ESTERO);
+  itemsFGralPaz.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(F_GENERAL_PAZ);
+  });
+  itemsFSanchezA.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(F_SANCHEZ_ANTONIOLI);
+  });
+  itemsFRGralPaz.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(F_RED_GENERAL_PAZ);
+  });
+  itemsFIndep.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(F_GENERICAS);
+  });
+
+  //opticas
+  itemsOCCap.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(O_CBA_CAPITAL);
+  });
+  itemsOCInt.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(O_CBA_INTERIOR);
+  });
+  itemsBsAs.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(O_BS_AS);
+  });
+  itemsOCata.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(O_CATAMARCA);
+  });
+  itemsCorri.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(O_CORRIENTES);
+  });
+  itemsOEnRi.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(O_ENTRE_RIOS);
+  });
+  itemsOSaFe.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(O_SANTA_FE);
+  });
+  itemsOSgo.addEventListener("click", () => {
+    grid.innerHTML = "";
+    insertTemplate(O_SGO_DEL_ESTERO);
+  });
+} catch {
+  console.log("this is not stores");
+}
+// Contact Form
+
+const contactForm = document.getElementById("contact-form");
+
+// const handleSubmit = (event) => {
+//   event.preventDefault();
+//   // console.log(contactForm);
+//   const { user_name, user_email, message } = contactForm;
+//   console.log(`Nombre: ${user_name.value}`);
+//   console.log(`Correo: ${user_email.value}`);
+//   console.log(`Mensaje: ${message.value}`);
+
+//   this.contact_number.value = (Math.random() * 100000) | 0;
+
+//   emailjs.sendForm("contact-service", "contactForm", this).then(
+//     () => {
+//       console.log("Success!");
+//     },
+//     (err) => {
+//       console.log("Fail...", err);
+//     }
+//   );
+
+//   // sendOkMessage();
+// };
+
+const sendOkMessage = () => {
+  alert(
+    "Muchas gracias por contactarte con nosotros!\nTe responderemos a la brevedad!"
+  );
+  contactForm.reset();
+};
+
+contactForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const { user_name, user_email, message } = contactForm;
+  console.log(`Nombre: ${user_name.value}`);
+  console.log(`Correo: ${user_email.value}`);
+  console.log(`Mensaje: ${message.value}`);
+  // contactForm.message.value = `${user_name.value} - ${user_email.value}|| ${message.value}`;
+
+  // this.contact_number.value = (Math.random() * 100000) | 0;
+
+  emailjs.sendForm("service_jbtkzch", "template_q35or0e", contactForm).then(
+    () => {
+      console.log("Success!");
+    },
+    (err) => {
+      console.log("Fail...", err);
+    }
+  );
+
+  sendOkMessage();
 });
