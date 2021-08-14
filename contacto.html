@@ -2,7 +2,11 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title>JM Cleaner</title>
+    <title>JM Cleaner - Contacto</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta property="og:title" content="" />
@@ -36,6 +40,64 @@
     <link rel="stylesheet" href="css/styles.min.css" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es5%2Ces6%2Ces7%2Ces2019%2Ces2017%2Ces2018%2Ces2016%2Ces2015"></script>
     <meta name="theme-color" content="#fafafa" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_spa8KW7KaxUdFPcF7CKsD");
+      })();
+    </script>
+    <style>
+      .contact-form {
+        background-color: #02507a;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      @media (min-width: 576px) {
+        .contact-form {
+          padding-left: 4rem;
+          padding-right: 4rem;
+        }
+      }
+
+      @media (min-width: 800px) {
+        .contact-form {
+          padding-left: 6rem;
+          padding-right: 6rem;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .contact-form {
+          padding-left: 8rem;
+          padding-right: 8rem;
+        }
+      }
+
+      .boton-enviar {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .boton-enviar:hover {
+        background-color: #23b8ec;
+        color: #fff;
+        border: 2px solid #23b8ec;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -56,34 +118,77 @@
       </div>
     </header>
     <div class="goTopBtn"><i class="fas fa-chevron-up"></i></div>
-    <main class="empresa-contenedor">
-      <section class="sobre-la-empresa contenedor">
-        <div class="compania-titulo"><h2>¿Quiénes somos?</h2></div>
-        <div class="grilla">
-          <div class="imagen"></div>
-          <div class="texto-grilla">
-            Luego de casi treinta años de trabajo en óptica y teniendo en cuenta
-            la forma en que se dañan los cristales por causa de limpieza tras
-            limpieza, un día me propuse lograr una solución que fuese lo más
-            simple posible, sin descuidar la calidad. La premisa era no usar
-            alcohol, amoníacos ni abrasivos ya que éstos son los causantes de
-            los daños en las lentes. Luego de varias pruebas e intentos… ¡Lo
-            logramos! Obtuvimos la fórmula exacta.<br />Entonces, decidí que lo
-            probaríamos un tiempo considerable, que fueron casi cuatro años,
-            limpiando todo tipo de materiales y probando con distintos
-            tratamientos hasta que nos convenciéramos nosotros mismos de tener
-            el mejor líquido de limpieza.<br />En ese momento comprendimos que
-            estábamos listos para salir al mercado. En pocas palabras, estamos
-            convencidos de que ofrecemos la mejor opción y creemos que eso se
-            transmitirá a los usuarios. Nuestra historia no termina ahí,
-            seguimos trabajando en nuevos desarrollos para lograr una visión más
-            segura.
-            <div class="signature">
-              <span>José María Hugo Pedrozo<br /></span><span>JM Cleaner</span>
-            </div>
-          </div>
-        </div>
+    <main class="contacto-main" style="margin-top: 15rem">
+      <section class="contacto contenedor">
+        <h2
+          style="
+            position: relative;
+            text-align: center;
+            font-size: 5rem;
+            line-height: 7rem;
+            color: #02507a;
+          "
+        >
+          Contactate con nosotros
+        </h2>
       </section>
+      <div class="mt-24 mb-48">
+        <form
+          id="contact-form"
+          class="
+            contact-form
+            container
+            mx-auto
+            flex flex-column
+            align-items-center
+            rounded-xl
+            py-12
+            px-24
+            text-white
+          "
+        >
+          <div class="form-group w-full flex flex-column">
+            <label>
+              <h4 class='h-0.5 text-3xl'>
+                Name</label>
+              </h4>
+            <br />
+            <input
+              type="text"
+              name="user_name"
+              class="w-full rounded-sm py-3 px-6 text-black"
+              placeholder="Tu nombre"
+            />
+          </div>
+          <div class="form-group w-full flex flex-column">
+            <label>
+              <h4 class='h-0.5 text-3xl'>
+                Email</label>
+              </h4>
+            <br />
+            <input
+              type="email"
+              name="user_email"
+              class="w-full rounded-sm py-3 px-6 text-black"
+              placeholder="Tu correo electronico"
+            />
+          </div>
+          <div class="form-group w-full flex flex-column">
+            <label>
+              <h4 class='h-0.5 text-3xl'>
+                Message</label>
+              </h4>
+            <br />
+            <textarea name="message" class="w-full rounded-sm py-3 px-6 text-black h-48"
+            placeholder="Tu mensaje"></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Enviar"
+            class="boton-enviar"
+          />
+        </form>
+      </div>
     </main>
     <footer>
       <div class="contenedor footer">
