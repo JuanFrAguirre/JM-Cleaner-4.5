@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "prod": "jm-cleaner"
+  },
+  "targets": {}
+}
