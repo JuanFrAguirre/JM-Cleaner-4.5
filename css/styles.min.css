@@ -1852,10 +1852,10 @@ footer .copyright::before {
   }
 }
 .contenedor-productos .contenido-productos .producto1 .imagen-producto1 {
-  background-image: url(../img/blue-nueva.jpg);
+  background-image: url(../img/blue-new-design.jpg);
 }
 .contenedor-productos .contenido-productos .producto2 .imagen-producto2 {
-  background-image: url(../img/green-nueva.jpg);
+  background-image: url(../img/green-new-design.jpg);
 }
 @media (orientation: landscape) {
   .contenedor-productos .contenido-productos .producto2 .imagen-producto2 {
